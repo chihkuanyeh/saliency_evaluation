@@ -1,5 +1,5 @@
 # Saliency Evaluation
-Python implementation for evaluating explanations presented in [On the (In)fidelity and Sensitivity for Explanations](https://arxiv.org/pdf/1901.09392.pdf) for evaluating any saliency explanations.
+Python implementation for evaluating explanations presented in [On the (In)fidelity and Sensitivity for Explanations](https://arxiv.org/pdf/1901.09392.pdf) published in NeurIPS 2019 for evaluating any saliency explanations.
 
 # get started
 run vis_mnist.ipynb to see examples of explanations along with sensitivity and infidelity
