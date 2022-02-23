@@ -305,7 +305,7 @@ def get_exp_sens(X, model, expl,exp, yy, pdt, sg_r,sg_N,sen_r,sen_N,norm,binary_
         X_noisy = X + sample
         expl_eps, _ = get_explanation_pdt(X_noisy, model, yy, exp, sg_r, sg_N,
                                      given_expl=given_expl, binary_I=binary_I)
-        max_diff = max(max_diff, np.linalg.norm(expl-expl_eps)) / norm
+        max_diff = max(max_diff, np.linalg.norm(expl-expl_eps)/norm)
     return max_diff
 
 def evaluate_infid_sen(loader, model, exp, pert, sen_r, sen_N, sg_r=None, sg_N=None, given_expl=None):
